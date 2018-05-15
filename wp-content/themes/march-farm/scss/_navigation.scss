@@ -1,0 +1,110 @@
+// Nav bar stylings
+.navbar.navbar-light.bg-light{
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  a{
+    color:$faded-blue;
+    font-family:$menufont;
+    font-weight:400;
+    font-size:14px;
+    padding: .5rem;
+    &:hover{
+      text-decoration: none;
+      color:$khaki-green;
+    }
+  }
+  .dropdown-menu.show{
+    border-radius: 0;
+    border:none !important;
+    background:$gray-100;
+    a.dropdown-item{
+      color:$faded-blue;
+      &:hover{
+        color:$khaki-green;
+        background:$pale-gray;
+      }
+    }
+  }
+  i.icon.fa.fa-bars{
+    font-size: 23px;
+    padding: 0.25rem;
+    color:$faded-blue;
+  }
+  .social-menu{
+    margin-left:5.5rem;
+    li{
+      background-color:$faded-blue;
+      height: 32px;
+      width:32px;
+      border-radius: 50%;
+      margin-right:8px;
+      a{
+        padding: 4.5px 6.5px;
+        i{
+        font-size:14px;
+        color:$white;
+        }
+      }
+    }
+  }
+}
+
+// Css code for Navigation 
+
+/*Drop down Menus*/
+/*Dropdown Css*/
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    padding: 8px 0px;
+    left: 100%;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+}
+ul.dropdown-menu {
+    border-radius: 0;
+    border: none;
+    background: #f8f9fa;
+}
+ul.dropdown-menu li {
+    a{
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    &:hover{
+        color:$khaki-green;
+        background:$pale-gray;
+    }
+  }
+}
+/*./Dropdown Css*/
